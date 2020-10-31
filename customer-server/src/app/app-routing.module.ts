@@ -9,6 +9,7 @@ import { FeedbackAddComponent } from './feedback/feedback-add/feedback-add.compo
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { VehicleAddComponent } from './vehicle-add/vehicle-add.component';
 
 const routes: Routes = [
   {path:'dashboard',component:DashboardComponent},
@@ -20,8 +21,8 @@ const routes: Routes = [
   {path:'order-history',component:OrderHistoryComponent},
   {path:'offer',component:OfferComponent},
   {path:'vehicle',component:VehicleComponent},
-  {path:'feedback-add',component:FeedbackAddComponent}
-
+  {path:'feedback-add',component:FeedbackAddComponent},
+  {path:'vehicle-add',component:VehicleAddComponent}
 
 
 ];

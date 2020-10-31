@@ -16,6 +16,7 @@ import { FeedbackHistoryComponent } from './feedback/feedback-history/feedback-h
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormsModule} from '@angular/forms';
 import { CommonModule } from "@angular/common";
+import { VehicleAddComponent } from './vehicle-add/vehicle-add.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import { CommonModule } from "@angular/common";
     OrderHistoryComponent,
     FeedbackAddComponent,
     FeedbackHistoryComponent,
-    DashboardComponent
+    DashboardComponent,
+    VehicleAddComponent
   ],
   imports: [
     BrowserModule,
