@@ -10,25 +10,25 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { VehicleAddComponent } from './vehicle-add/vehicle-add.component';
+import { ViewHistoryDetailsComponent } from './view-history-details/view-history-details.component';
 
 const routes: Routes = [
-  {path:'dashboard',component:DashboardComponent},
-  {path:'feedback',component:FeedbackAddComponent},
-  {path:'cart',component:CartComponent},
-  {path:'login',component:LoginComponent},
-  {path:'profile',component:ProfileComponent},
-  {path:'shop',component:ShopComponent},
-  {path:'order-history',component:OrderHistoryComponent},
-  {path:'offer',component:OfferComponent},
-  {path:'vehicle',component:VehicleComponent},
-  {path:'feedback-add',component:FeedbackAddComponent},
-  {path:'vehicle-add',component:VehicleAddComponent}
-
-
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'feedback', component: FeedbackAddComponent },
+  { path: 'cart', component: CartComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'profile', component: ProfileComponent },
+  { path: 'shop', component: ShopComponent },
+  { path: 'order-history', component: OrderHistoryComponent },
+  { path: 'offer', component: OfferComponent },
+  { path: 'vehicle', component: VehicleComponent },
+  { path: 'feedback-add', component: FeedbackAddComponent },
+  { path: 'vehicle-add', component: VehicleAddComponent },
+  { path: 'view-history-details', component: ViewHistoryDetailsComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

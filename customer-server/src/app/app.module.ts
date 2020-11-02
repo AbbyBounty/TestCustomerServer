@@ -14,9 +14,10 @@ import { OrderHistoryComponent } from './order-history/order-history.component';
 import { FeedbackAddComponent } from './feedback/feedback-add/feedback-add.component';
 import { FeedbackHistoryComponent } from './feedback/feedback-history/feedback-history.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { FormsModule} from '@angular/forms';
-import { CommonModule } from "@angular/common";
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 import { VehicleAddComponent } from './vehicle-add/vehicle-add.component';
+import { ViewHistoryDetailsComponent } from './view-history-details/view-history-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,15 +32,11 @@ import { VehicleAddComponent } from './vehicle-add/vehicle-add.component';
     FeedbackAddComponent,
     FeedbackHistoryComponent,
     DashboardComponent,
-    VehicleAddComponent
+    VehicleAddComponent,
+    ViewHistoryDetailsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    CommonModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, CommonModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
