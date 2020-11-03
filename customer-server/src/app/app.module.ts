@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { VehicleAddComponent } from './vehicle-add/vehicle-add.component';
 import { ViewHistoryDetailsComponent } from './view-history-details/view-history-details.component';
+
 @NgModule({
   declarations: [
     AppComponent,

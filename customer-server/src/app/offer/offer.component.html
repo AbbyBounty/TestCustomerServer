@@ -1,1 +1,20 @@
-<p>offer works!</p>
+<h1>SHOP OFFERS</h1>
+
+
+<table border="1" style="border-collapse:collapse" *ngIf="shop.length > 0" style="color:maroon;" style="background-color:mediumturquoise">
+<tr>
+      <th>OFFER NAME</th>
+      <th>SHOP NAME</th>
+      <th>OFFERS VALIDITY</th>
+      
+</tr>
+
+<tr *ngFor="let shopper of shop">
+    <td>{{shopper.offer_name}}</td>
+    <td>{{shopper.shop_name}}</td>
+    <td>{{shopper.validity}}</td>
+</tr>
+</table>
+
+
+

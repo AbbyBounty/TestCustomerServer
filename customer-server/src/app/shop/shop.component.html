@@ -1,1 +1,17 @@
-<p>shop works!</p>
+<h1>SHOP DETAILS</h1>
+
+<table border="1" style="border-collapse:collapse" *ngIf="s.length > 0" style="color:orange" style="background-color:orangered">
+<tr>
+      <th>Shop Registration ID</th>
+      <th>Shop Name</th>
+      <th>Offers</th>
+      
+</tr>
+
+<tr *ngFor="let shop of s;let i=index">
+    <td>{{shop.shop_id}}</td>
+    <td>{{shop.shop_name}}</td>
+    <td>{{shop.offer}}</td>
+   
+</tr>
+</table>
